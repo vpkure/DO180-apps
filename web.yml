@@ -1,5 +1,5 @@
 - name: run playbook
-  hosts: 172.25.231.[79:82]
+  hosts: 172.25.231.82
   tasks:
   - name: install httpd
     yum:
