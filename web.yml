@@ -1,5 +1,5 @@
 - name: run playbook
-  hosts: 172.25.231.82
+  hosts: webserver
   tasks:
   - name: install httpd
     yum:
