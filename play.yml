@@ -1,0 +1,15 @@
+- name: run playbook
+  hosts: webserver
+  tasks:
+  - name: install httpd
+    yum:
+     name: httpd
+     state: latest
+  - name: create file
+    copy:
+     content: "HELLO ANSIBLE"
+     dest: /var/www/html/index.html
+  - name: restart service
+    service:
+     name: httpd
+     state: restarted
